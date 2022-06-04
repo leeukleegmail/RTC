@@ -1,8 +1,9 @@
-import urtc
 from machine import I2C, Pin
 
+import urtc_driver
+
 i2c = I2C(scl=Pin(5), sda=Pin(4))
-rtc = urtc.DS1307(i2c)
+rtc = urtc_driver.DS1307(i2c)
 
 
 def read_time_from_rtc():
