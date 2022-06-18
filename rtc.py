@@ -16,8 +16,8 @@ def read_time_from_rtc():
     return "{}:{}.{}".format(hours, minutes, seconds)
 
 
-def set_time_for_rtc(year=None, month=None, day=None, weekday=None, hour=None, minutes=None, seconds=None, miliseconds=None):
-    rtc.datetime((year, month, day, weekday, hour, minutes, seconds, miliseconds))  # set a specific date and time
+def set_time_for_rtc(year=None, month=None, day=None, hour=None, minutes=None, seconds=None, miliseconds=None):
+    rtc.datetime((year, month, day, hour, minutes, seconds, miliseconds))  # set a specific date and time
 
 
 def add_leading_zero_if_required(datetime):
