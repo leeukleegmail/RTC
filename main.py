@@ -7,7 +7,8 @@ from util import get_time_json
 
 enable_network()
 
-ntp_time = ntptime.settime()
+ntptime.settime()
+
 tm = get_time_json()
 
 set_time_for_rtc(tm["year"], tm["month"], tm["day"], tm["hour"], tm["minutes"], tm["seconds"], 123)
